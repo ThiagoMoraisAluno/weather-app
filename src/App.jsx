@@ -1,9 +1,17 @@
 import React from 'react';
+import fetchData from './services/api';
 import Card from './components/Card';
 function App() {
+
+    const handleSubmit = (event) =>{
+      event.preventDefault();
+      console.log (fetchData('fortaleza'));
+      
+    }
+
   return (
     <div className="flex flex-col w-full h-screen items-center justify-center">
-      <form>
+      <form onSubmit = { handleSubmit }>
         <input 
         type="text" 
         placeholder='cidade' 
