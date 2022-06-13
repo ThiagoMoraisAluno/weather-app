@@ -1,7 +1,14 @@
 import React from 'react';
 
 function App() {
-  return <h1>Olá, Mundo!</h1>
+  return (
+    <div className="flex w-full h-screen items-center justify-center">
+      <form>
+        <input type="text" placeholder='cidade' />
+        <button type="submit">Pesquisar</button>
+      </form>
+    </div>
+  )
 }
   
 
